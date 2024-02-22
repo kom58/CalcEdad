@@ -45,6 +45,13 @@ public class Aplicacion {
                 calcularEdad();
             }
         });
+        tflAnoNac.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                calcularEdad();
+            }
+        });
     }
 
     public void ponerFechaActual() {
