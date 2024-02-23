@@ -89,7 +89,7 @@ public class Comprobar {
     }
 
 
-    public boolean esFecha(String dd, String mm, String aaaa) {        // esFecha ++++++++++++++++
+    public boolean esFecha(String dd, String mm, String aaaa) {        // esFecha +++++++++++++
 
         boolean correcto = true;
         int d, m, a;

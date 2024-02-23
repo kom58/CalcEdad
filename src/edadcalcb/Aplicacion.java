@@ -47,7 +47,6 @@ public class Aplicacion {
 
         Comprobar cpb = new Comprobar();
         if (cpb.esFecha(diaNStr, mesNStr, anoNStr)) {
-
             int diaN = Integer.parseInt(diaNStr);
             int mesN = Integer.parseInt(mesNStr);
             int anoN = Integer.parseInt(anoNStr);

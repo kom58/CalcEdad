@@ -113,7 +113,7 @@
             <properties>
               <font size="18"/>
               <foreground color="-6855085"/>
-              <text value="00/00/2000"/>
+              <text value="01/01/2000"/>
             </properties>
           </component>
           <grid id="97965" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
