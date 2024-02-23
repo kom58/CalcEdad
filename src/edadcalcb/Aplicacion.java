@@ -1,28 +1,17 @@
 package edadcalcb;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Calendar;
 
 public class Aplicacion {
 
     private JPanel panPrincipal;
-    private JPanel panSuperior;
-    private JPanel panMedio;
-    private JPanel panInferior;
-    private JLabel txtTitulo;
     private JButton btnSalir;
     private JButton btnCalcular;
     private JLabel txtFechaActual;
-    private JLabel titFechaActual;
-    private JLabel titFechaNacimiento;
     private JTextField tflMesNac;
     private JTextField tflDiaNac;
     private JTextField tflAnoNac;
-    private JLabel separador1;
-    private JLabel separador2;
-    private JPanel panResultado;
     private JLabel txtResultadoAnos;
     private JLabel txtResultadoMeses;
     private JLabel txtResultadoDias;
@@ -32,26 +21,9 @@ public class Aplicacion {
 
         ponerFechaActual();
 
-        btnSalir.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-
-                System.exit(0);
-            }
-        });
-
-        btnCalcular.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-
-                calcularEdad();
-            }
-        });
-        tflAnoNac.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-                calcularEdad();
-            }
-        });
+        btnSalir.addActionListener(e -> System.exit(0));
+        btnCalcular.addActionListener(e -> calcularEdad());
+        tflAnoNac.addActionListener(e -> calcularEdad());
     }
 
     public void ponerFechaActual() {
